@@ -9,10 +9,40 @@
   <title>Contry Table</title>
 </head>
 <body>
-  <main class="container">
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Countries List</span>
+    </div>
+  </nav>
+  <main class="container mt-4">
     <div class="row">
+      <div class="col-3">
+        <select class="form-select" id="select-filter" aria-label="Default select example">
+          <option selected>Select an option</option>
+          <option value="1">Name</option>
+          <option value="2">Capital</option>
+          <option value="3">Region</option>
+          <option value="4">Language</option>
+          <option value="5">Population</option>
+          <option value="6">Flag</option>
+        </select>
+      </div>
       <div class="col">
-        <table class="table">
+        <input type="text" class="form-control" id="filter-text" placeholder="Enter text here" aria-label="filter" aria-describedby="basic-addon1">  
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col">
+        <h1 id="empty-table-msg" class="d-none text-center">No data to display</h1>
+        <table class="table" id="countries-table">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -32,7 +62,7 @@
     <div class="row">
       <div class="col">
         <nav aria-label="Page navigation example">
-          <ul id="pagination" class="pagination justify-content-center">
+          <ul class="pagination justify-content-center">
           </ul>
         </nav>
       </div>
