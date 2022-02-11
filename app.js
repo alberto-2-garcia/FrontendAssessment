@@ -92,4 +92,12 @@ addForm.addEventListener('submit', (e) => {
 
   let value = addForm.querySelector('input[type="text"]').value;
   console.log(value);
+
+  let li = document.createElement('li');
+  let bookName = document.createElement('span');
+  let deleteBtn = document.createElement('span');
+
+  li.appendChild(bookName);
+  li.appendChild(deleteBtn);
+  list.appendChild(li);
 })
