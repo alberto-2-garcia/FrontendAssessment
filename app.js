@@ -1,17 +1,32 @@
 let banner = document.getElementById('page-banner');
 let bookList = document.getElementById('book-list')
-console.log(banner);
-console.log(bookList);
+// console.log(banner);
+// console.log(bookList);
 
 let titles = document.getElementsByClassName('title');
-console.log(titles);
-Array.from(titles).forEach(title => {
-  console.log(title);
-})
+// console.log(titles);
+// Array.from(titles).forEach(title => {
+//   console.log(title);
+// })
 
 let lis = document.getElementsByTagName('li');
-console.log(lis);
-Array.from(lis).forEach(li => {
-  console.log(li);
-})
+// console.log(lis);
+// Array.from(lis).forEach(li => {
+//   console.log(li);
+// })
 
+let wrap = document.querySelector('#wrapper')
+console.log(wrap);
+
+let liBook = document.querySelector('#book-list li:nth-child(2) .name');
+console.log(liBook);
+
+let book = document.querySelector('#book-list li .name');
+console.log(book);
+
+let books = document.querySelectorAll('#book-list li .name');
+console.log(books);
+
+Array.from(books).forEach(book => {
+  console.log(book)
+})
