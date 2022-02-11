@@ -1,76 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <title>Contry Table</title>
-</head>
-<body>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">Countries List</span>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <title>JavaScript DOM Tutorials</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Bookorama</h1>
+          <p>Books for Ninjas</p>
+          <form id="search-books">
+            <input type="text" placeholder="Search books..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="book-list">
+	    	<h2 class="title">Books to Read</h2>
+	    	<ul>
+	    		<li>
+	    			<span class="name">Name of the Wind</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">The Wise Man's Fear</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Kafka on the Shore</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">The Master and the Margarita</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-book">
+	    	<input type="text" placeholder="Add a book..." />
+	    	<button>Add</button>
+	    </form>
+
     </div>
-  </nav>
-  <main class="container mt-4">
-    <div class="row">
-      <div class="col-3">
-        <select class="form-select" id="select-filter" aria-label="Default select example">
-          <option selected>Select an option</option>
-          <option value="1">Name</option>
-          <option value="2">Capital</option>
-          <option value="3">Region</option>
-          <option value="4">Language</option>
-          <option value="5">Population</option>
-          <option value="6">Flag</option>
-        </select>
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" id="filter-text" placeholder="Enter text here" aria-label="filter" aria-describedby="basic-addon1">  
-      </div>
-    </div>
-    <div class="row mt-4">
-      <div class="col">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination justify-content-center">
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="row mt-4">
-      <div class="col">
-        <h1 id="empty-table-msg" class="d-none text-center">No data to display</h1>
-        <table class="table" id="countries-table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Name</th>
-              <th scope="col">Capital</th>
-              <th scope="col">Region</th>
-              <th scope="col">Language</th>
-              <th scope="col">Population</th>
-              <th scope="col">Flag</th>
-            </tr>
-          </thead>
-          <tbody id="body-table">
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination justify-content-center">
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </main>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js" integrity="sha512-RdSPYh1WA6BF0RhpisYJVYkOyTzK4HwofJ3Q7ivt/jkpW6Vc8AurL1R+4AUcvn9IwEKAPm/fk7qFZW3OuiUDeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./index.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
