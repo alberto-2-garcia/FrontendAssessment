@@ -2,11 +2,11 @@ let banner = document.getElementById('page-banner');
 // let bookList = document.getElementById('book-list')
 // console.log(banner);
 // console.log(bookList);
-console.log('Node type', banner.nodeType);
-console.log('Node name', banner.nodeName);
-console.log('Node hasChildren', banner.hasChildNodes());
-let clonedBanner = banner.cloneNode(false);
-console.log(clonedBanner);
+// console.log('Node type', banner.nodeType);
+// console.log('Node name', banner.nodeName);
+// console.log('Node hasChildren', banner.hasChildNodes());
+// let clonedBanner = banner.cloneNode(false);
+// console.log(clonedBanner);
 
 let titles = document.getElementsByClassName('title');
 // console.log(titles);
@@ -41,5 +41,8 @@ books.forEach(book => {
 
 let bookList = document.querySelector('#book-list');
 // bookList.innerHTML = '<h2>Books and more books...</h2>'
-bookList.innerHTML += '<p>This is how you add HTML</p>'
-
+// bookList.innerHTML += '<p>This is how you add HTML</p>'
+console.log('node parent', bookList.parentNode)
+console.log('node elemnt', bookList.parentElement)
+console.log('node childNodes', bookList.childNodes)
+console.log('node children', bookList.children)
