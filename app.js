@@ -2,6 +2,11 @@ let banner = document.getElementById('page-banner');
 // let bookList = document.getElementById('book-list')
 // console.log(banner);
 // console.log(bookList);
+console.log('Node type', banner.nodeType);
+console.log('Node name', banner.nodeName);
+console.log('Node hasChildren', banner.hasChildNodes());
+let clonedBanner = banner.cloneNode(false);
+console.log(clonedBanner);
 
 let titles = document.getElementsByClassName('title');
 // console.log(titles);
