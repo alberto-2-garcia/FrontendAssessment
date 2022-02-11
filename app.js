@@ -26,7 +26,7 @@ let wrap = document.querySelector('#wrapper')
 let liBook = document.querySelector('#book-list li:nth-child(2) .name');
 // console.log(liBook);
 
-let book = document.querySelector('#book-list li .name');
+// let book = document.querySelector('#book-list li .name');
 // console.log(book);
 
 let books = document.querySelectorAll('#book-list li .name');
@@ -106,4 +106,23 @@ addForm.addEventListener('submit', (e) => {
   li.appendChild(bookName);
   li.appendChild(deleteBtn);
   list.appendChild(li);
-})
+});
+
+let book = document.querySelector('li:first-child .name');
+console.log(book);
+console.log('get class', book.getAttribute('class'));
+console.log('get href', book.getAttribute('href'));
+console.log('set class', book.setAttribute('class', 'name-2'));
+console.log('get class', book.getAttribute('class'));
+
+console.log('-------')
+
+console.log('has class', book.hasAttribute('class'));
+console.log('has href', book.hasAttribute('href'));
+
+console.log('-------')
+
+console.log('remove class', book.removeAttribute('class'));
+console.log('has class', book.hasAttribute('class'));
+console.log('set class', book.setAttribute('class', 'name'));
+console.log('get class', book.getAttribute('class'));
