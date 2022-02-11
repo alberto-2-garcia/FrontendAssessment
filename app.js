@@ -46,9 +46,32 @@ let bookList = document.querySelector('#book-list');
 // console.log('node elemnt', bookList.parentElement)
 // console.log('node childNodes', bookList.childNodes)
 // console.log('node children', bookList.children)
-console.log('node next sibling', bookList.nextSibling);
-console.log('node nextElementSibling', bookList.nextElementSibling);
-console.log('node previousSibling', bookList.previousSibling);
-console.log('node previousElementSibling', bookList.previousElementSibling);
+// console.log('node next sibling', bookList.nextSibling);
+// console.log('node nextElementSibling', bookList.nextElementSibling);
+// console.log('node previousSibling', bookList.previousSibling);
+// console.log('node previousElementSibling', bookList.previousElementSibling);
 
-bookList.previousElementSibling.querySelector('p').innerHTML += '<br/> Too cool for everyone else!'
+// bookList.previousElementSibling.querySelector('p').innerHTML += '<br/> Too cool for everyone else!'
+
+let h2 = document.querySelector('#book-list h2');
+
+h2.addEventListener('click', (e) => {
+  console.log(e.target);
+  console.log(e);
+});
+
+let btns = document.querySelectorAll('#book-list .delete');
+
+btns.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    let li = e.target.parentElement;
+    li.parentNode.removeChild(li);
+  })
+});
+
+let link = document.querySelector('#page-banner a');
+
+link.addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log('link navigation', e.target.textContent);
+})
