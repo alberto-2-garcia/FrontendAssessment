@@ -1,5 +1,5 @@
 let banner = document.getElementById('page-banner');
-let bookList = document.getElementById('book-list')
+// let bookList = document.getElementById('book-list')
 // console.log(banner);
 // console.log(bookList);
 
@@ -16,17 +16,25 @@ let lis = document.getElementsByTagName('li');
 // })
 
 let wrap = document.querySelector('#wrapper')
-console.log(wrap);
+// console.log(wrap);
 
 let liBook = document.querySelector('#book-list li:nth-child(2) .name');
-console.log(liBook);
+// console.log(liBook);
 
 let book = document.querySelector('#book-list li .name');
-console.log(book);
+// console.log(book);
 
 let books = document.querySelectorAll('#book-list li .name');
-console.log(books);
+// console.log(books);
+// Array.from(books).forEach(book => {
+//   console.log(book)
+// })
 
-Array.from(books).forEach(book => {
-  console.log(book)
+books.forEach(book => {
+  book.textContent += ' (book title)';
 })
+
+let bookList = document.querySelector('#book-list');
+// bookList.innerHTML = '<h2>Books and more books...</h2>'
+bookList.innerHTML += '<p>This is how you add HTML</p>'
+
