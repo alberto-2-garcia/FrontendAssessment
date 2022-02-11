@@ -97,6 +97,12 @@ addForm.addEventListener('submit', (e) => {
   let bookName = document.createElement('span');
   let deleteBtn = document.createElement('span');
 
+  bookName.textContent = value;
+  deleteBtn.textContent = 'delete';
+
+  bookName.classList.add('name');
+  deleteBtn.classList.add('delete');
+
   li.appendChild(bookName);
   li.appendChild(deleteBtn);
   list.appendChild(li);
