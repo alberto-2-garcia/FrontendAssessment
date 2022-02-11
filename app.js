@@ -42,7 +42,13 @@ books.forEach(book => {
 let bookList = document.querySelector('#book-list');
 // bookList.innerHTML = '<h2>Books and more books...</h2>'
 // bookList.innerHTML += '<p>This is how you add HTML</p>'
-console.log('node parent', bookList.parentNode)
-console.log('node elemnt', bookList.parentElement)
-console.log('node childNodes', bookList.childNodes)
-console.log('node children', bookList.children)
+// console.log('node parent', bookList.parentNode)
+// console.log('node elemnt', bookList.parentElement)
+// console.log('node childNodes', bookList.childNodes)
+// console.log('node children', bookList.children)
+console.log('node next sibling', bookList.nextSibling);
+console.log('node nextElementSibling', bookList.nextElementSibling);
+console.log('node previousSibling', bookList.previousSibling);
+console.log('node previousElementSibling', bookList.previousElementSibling);
+
+bookList.previousElementSibling.querySelector('p').innerHTML += '<br/> Too cool for everyone else!'
