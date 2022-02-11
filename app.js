@@ -53,25 +53,34 @@ let bookList = document.querySelector('#book-list');
 
 // bookList.previousElementSibling.querySelector('p').innerHTML += '<br/> Too cool for everyone else!'
 
-let h2 = document.querySelector('#book-list h2');
+// let h2 = document.querySelector('#book-list h2');
 
-h2.addEventListener('click', (e) => {
-  console.log(e.target);
-  console.log(e);
-});
+// h2.addEventListener('click', (e) => {
+//   console.log(e.target);
+//   console.log(e);
+// });
 
-let btns = document.querySelectorAll('#book-list .delete');
+// let btns = document.querySelectorAll('#book-list .delete');
 
-btns.forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    let li = e.target.parentElement;
-    li.parentNode.removeChild(li);
-  })
-});
+// btns.forEach(btn => {
+//   btn.addEventListener('click', (e) => {
+//     let li = e.target.parentElement;
+//     li.parentNode.removeChild(li);
+//   })
+// });
 
 let link = document.querySelector('#page-banner a');
 
 link.addEventListener('click', (e) => {
   e.preventDefault();
   console.log('link navigation', e.target.textContent);
+})
+
+let list = document.querySelector('#book-list ul');
+
+list.addEventListener('click', (e) => {
+  if(e.target.className == 'delete') {
+    let li = e.target.parentElement;
+    li.parentNode.removeChild(li);
+  }
 })
