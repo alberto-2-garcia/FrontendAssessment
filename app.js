@@ -109,20 +109,29 @@ addForm.addEventListener('submit', (e) => {
 });
 
 let book = document.querySelector('li:first-child .name');
-console.log(book);
-console.log('get class', book.getAttribute('class'));
-console.log('get href', book.getAttribute('href'));
-console.log('set class', book.setAttribute('class', 'name-2'));
-console.log('get class', book.getAttribute('class'));
+// console.log(book);
+// console.log('get class', book.getAttribute('class'));
+// console.log('get href', book.getAttribute('href'));
+// console.log('set class', book.setAttribute('class', 'name-2'));
+// console.log('get class', book.getAttribute('class'));
 
-console.log('-------')
+// console.log('-------')
 
-console.log('has class', book.hasAttribute('class'));
-console.log('has href', book.hasAttribute('href'));
+// console.log('has class', book.hasAttribute('class'));
+// console.log('has href', book.hasAttribute('href'));
 
-console.log('-------')
+// console.log('-------')
 
-console.log('remove class', book.removeAttribute('class'));
-console.log('has class', book.hasAttribute('class'));
-console.log('set class', book.setAttribute('class', 'name'));
-console.log('get class', book.getAttribute('class'));
+// console.log('remove class', book.removeAttribute('class'));
+// console.log('has class', book.hasAttribute('class'));
+// console.log('set class', book.setAttribute('class', 'name'));
+// console.log('get class', book.getAttribute('class'));
+
+let hideBox = document.querySelector('#hide');
+hideBox.addEventListener('change', (e) => {
+  if(hideBox.checked) {
+    list.style.display = 'none';
+  } else {
+    list.style.display = 'initial';
+  }
+})
