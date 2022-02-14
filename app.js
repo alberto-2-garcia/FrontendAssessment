@@ -149,3 +149,18 @@ searchBar.addEventListener('keyup', (e) => {
     }
   })
 })
+
+let tabs = document.querySelector('.tabs');
+let panels = document.querySelectorAll('.panel');
+tabs.addEventListener('click', (e) => {
+  if (e.target.tagName == 'LI') {
+    let targetPanel = document.querySelector(e.target.dataset.target);
+    panels.forEach(panel => {
+      if (panel == targetPanel) {
+        panel.classList.add('active');
+      } else {
+        panel.classList.remove('active');
+      }
+    })
+  }
+})
