@@ -55,3 +55,18 @@ body {
   padding-top: 30px;
   line-height: 1.6em;
 }
+
+#main {
+  float: right;
+  width: 70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  border-right: 1px solid #333;
+  box-sizing: border-box;
+}
