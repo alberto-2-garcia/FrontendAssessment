@@ -41,3 +41,17 @@ body {
   text-decoration: none;
   font-size: 1rem;
 }
+
+#jumbo {
+  background-image: url('./../images/bg.jpg');
+  background-position: center center;
+  min-height: 200px;
+  text-align: center;
+}
+
+#jumbo h1 {
+  color: #fff;
+  font-size: 3rem;
+  padding-top: 30px;
+  line-height: 1.6em;
+}
