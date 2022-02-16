@@ -7,7 +7,7 @@
         "../../scss/_home.scss",
         "../../scss/_menu.scss",
         "../../scss/_about.scss",
-        "../../scss/__projects.scss"
+        "../../scss/_projects.scss"
     ],
     "names": [],
     "file": "main.css"
