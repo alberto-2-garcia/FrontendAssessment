@@ -19,10 +19,11 @@ h3 {
 }
 .primary-btn {
   background: #3b5998;
-  color: #fff;
+  color: white;
 }
 ul#menu {
   list-style: none;
+  background-color: #d9f8f6;
 }
 ul#menu li {
   padding: 10px 0;

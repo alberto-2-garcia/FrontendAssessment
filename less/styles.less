@@ -5,6 +5,14 @@
 @secondary-color: #20b2aa;
 @line-height: 1em + 1em;
 
+.text-color(@a) when (lightness(@a) >= 50%) {
+  color: black;
+}
+
+.text-color(@a) when (lightness(@a) < 50%) {
+  color: white;
+}
+
 body {
   font-family: @font-family;
   background: @background-color;
@@ -27,11 +35,12 @@ h1, h3 {
 
 .primary-btn:extend(.btn) {
   background: @primary-color;
-  color: #fff;
+  .text-color(@primary-color);
 }
 
 ul#menu {
   list-style: none;
+  background-color: lighten(@secondary-color, 50%);
 
   li {
     padding: 10px 0;
