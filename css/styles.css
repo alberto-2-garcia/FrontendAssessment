@@ -1,3 +1,40 @@
 body {
-  background: red;
+  font-family: Tahoma;
+  background: #b3b3b3;
+  line-height: 2em;
+}
+h1,
+h3 {
+  border-top: dotted 1px #000;
+  border-bottom: dotted 2px #000;
+}
+.primary-text {
+  color: #3b5998;
+}
+.btn,
+.primary-btn {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 10px;
+}
+.primary-btn {
+  background: #3b5998;
+  color: #fff;
+}
+ul#menu {
+  list-style: none;
+}
+ul#menu li {
+  padding: 10px 0;
+}
+ul#menu li a {
+  color: #20b2aa;
+  text-decoration: none;
+}
+ul#menu li a:hover {
+  color: #000;
+}
+.bordered {
+  border-top: dotted 1px #000;
+  border-bottom: dotted 2px #000;
 }
