@@ -71,3 +71,32 @@ They help review the code
 They also help contribute code to other repositories
 
 They work based on branches, not commits
+
+## Merge Conflicts
+
+It's conflicts happening when merging changes. They occur when contradictory changes happen.
+
+They can happen with the next commands:
+- git merge
+- git rebase
+- git pull
+- git cherry-pick
+- git stash apply
+
+Git will tell you when they happen and where they happened
+
+To undo merge conflicts run:
+- git merge --abort
+- git rebase --abort
+
+It marks where are the conflicts
+
+```
+<<<<<<< current_branch
+code
+=======
+more code
+>>>>>>> incoming_branch
+```
+
+You'll have to clean up the files. Probably you'll have to speak to a teammate
