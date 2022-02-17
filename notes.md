@@ -100,3 +100,24 @@ more code
 ```
 
 You'll have to clean up the files. Probably you'll have to speak to a teammate
+
+## Merge vs Rebase
+
+### Merge
+
+Searches for 3 commits
+1. Common ancestor
+2. Last commit on branch A
+3. Last commit on branch B
+
+If there are only new commits in one branch, it simply adds them to the other.
+
+If there are new commits in both branches, it create a merge commit, signaling the merging of both branches
+
+### Rebase
+
+1. Stores commits from branch A
+2. Adds commits from branch B to branch A
+3. Readds stored commis from branch A at the end
+
+Use rebase for cleaning up your commit history, dont use it in pushed commits
