@@ -1,0 +1,24 @@
+{
+  "name": "frontendassessment",
+  "version": "1.0.0",
+  "description": "Repository for Upgrade Frontend Assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alberto-2-garcia/FrontendAssessment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alberto-2-garcia/FrontendAssessment/issues"
+  },
+  "homepage": "https://github.com/alberto-2-garcia/FrontendAssessment#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "pa11y": "^6.1.1"
+  }
+}
