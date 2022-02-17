@@ -61,3 +61,13 @@ It is more structured, you have both main and develop as long-running branches a
 
 - Consider project, release cycle, and team
 - Take inspiration from existing models and create your own model
+
+## Pull Requests
+
+They change from platform to platform, but the principles stay the same
+
+They help review the code
+
+They also help contribute code to other repositories
+
+They work based on branches, not commits
